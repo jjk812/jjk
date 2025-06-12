@@ -1,0 +1,31 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  application:
+    name: config-client
+
+server:
+  port: 8081
+
+config:
+  info: "这是从配置中心获取的配置信息"
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  application:
+    name: config-client
+
+server:
+  port: 8082
+
+config:
+  info: 这是config-client生产环境的配置信息 

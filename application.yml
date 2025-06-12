@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  application:
+    name: spring-cloud-config-demo
+
+config:
+  info: 这是开发环境的全局配置信息
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  application:
+    name: spring-cloud-config-demo-prod
+
+config:
+  info: 这是生产环境的全局配置信息 
