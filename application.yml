@@ -1,25 +1,14 @@
-spring:
-  profiles:
-    active: dev
-
 ---
 spring:
-  config:
-    activate:
-      on-profile: dev
+  profiles: app1
   application:
-    name: spring-cloud-config-demo
-
-config:
-  info: 这是开发环境的全局配置信息
-
+    name: app1
+custom:
+  message: "{cipher}AQBr7XHFETxGaoSpF9WfzyBiQjdkU0wZt+nDWa1PD3aVZVnXxycJeUf91Yhtdx5RHZjN6Rcl54mk6YHTEaOj3UbtBFem5lxfB14GkWPPKtF7O1j/B3JRQ3C0j0DpC9wXY766IcaL+uQjcvf085Z/gt2m82xusKwXfIkz7ymfMmmqXcx1SkUu5JrPiyVQTIDix9QJXkwOGHmWv34Kd+q2ZJ/g2+YWygWjF9cH4kBgxgwfPWmhwEE5fe3lAAGdhEM447Cnbh+PIF7BBJyQItbRZV1xw7KY80i4O5xJplzbq48tJheP17Rw/v/nkk5QIMUCNOOgktA6kJtPw3HQ86MhXo8Js7S4bQSJtQGId7Tf1VAaPV3jGkPQjp5gi5MV7toKnWkZ478AVGoZj8IlH8n9A0zf"
 ---
 spring:
-  config:
-    activate:
-      on-profile: prod
+  profiles: app2
   application:
-    name: spring-cloud-config-demo-prod
-
-config:
-  info: 这是生产环境的全局配置信息 
+    name: app2
+custom:
+  message: "{cipher}AQCSGR56Ey5P0UGvr4XMlwYOhm0PyvxPhmcPrER1Kc0RfK18d59ejj4cWDv6Tl+Bp6wrnMg9dQjI9rnh4kS3DgfQmk7kaycyOQwPwepOofNATmDJ7sqtfZTV88Ab2ijqo6Fyzm68Luk1b+DzpvwwcMnixBZaxPl8/eIsl/wUJOiKPPEVGVZfQHYHmsag6OxoTWbY0iMrFZ+kQP3WjFIxy3c8GrPbPgCq3DWJOxet/45ZvVQrRZYC3KJBDx4agR7SYotH/hAia/Y6ylfS4pE3eAT9ffGb6yTWi1qG6jM6fDv7rFAJFH4G+I3Q1ScV20TmyvuSP0yBnuOKnkDC8ECIjM0QXWWQp5+6IK2yhnGY0UjtNlh1cxiDM3ud81wmEYm7PlbPNiW+5RZxWpl9oEICyfx3"
